@@ -5,7 +5,7 @@ import Image from "next/image";
 export const Avatar = () => {
   return (
     <MotionTransition
-      position="bottom"
+      position="botton"
       className="bottom-0 right-0 hidden md:inline-block md:absolute "
     >
       <Image

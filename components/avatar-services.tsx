@@ -10,8 +10,8 @@ export const AvatarServices = () => {
     >
       <Image
         src="/services.png"
-        width={500}
-        height={500}
+        width={600}
+        height={600}
         className="w-[600px] h-full"
         alt="Avatar"
       />
