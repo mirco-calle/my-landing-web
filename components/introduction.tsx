@@ -9,8 +9,8 @@ const Introduction = () => {
         <Image
           src="/home-4.png"
           priority
-          width="400"
-          height="400"
+          width="300"
+          height="300"
           alt="Profile pic"
         />
         <div className="flex flex-col justify-center max-w-md">
