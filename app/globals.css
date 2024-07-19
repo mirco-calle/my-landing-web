@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  color: #fff;
+  background: #413472;
+}
+
+main {
+  background: #5a5d81;
+  height: 100vh;
+  height: 100dvh;
+}
+/* para los puntitos sliders de la pagina de servicios */
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  background-color: #d8be48;
+}
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
