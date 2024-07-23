@@ -8,9 +8,10 @@ const Introduction = () => {
       <div className="z-20 grid items-center h-full p-6 py-20 md:py-0 md:grid-cols-2">
         <Image
           src="/home-4.png"
+          className="mx-auto py-10"
           priority
-          width="200"
-          height="200"
+          width="150"
+          height="150"
           alt="Profile pic"
         />
         <div className="flex flex-col justify-center max-w-md">
@@ -43,13 +44,13 @@ const Introduction = () => {
           </p>
           <div className="flex items-center justify-center gap-3 md:justify-start md:gap-10">
             <Link
-              href="/projects"
+              href="/portfolio"
               className="px-3 py-2 transition-all border-2 cursor-pointer text-md w-fit rounded-xl hover:shadow-xl hover:shadow-white/50"
             >
               Ver proyectos
             </Link>
             <Link
-              href="/projects"
+              href="https://wa.link/s3pozw"
               className="px-3 py-2 transition-all border-2 cursor-pointer text-secondary border-secondary  
                    text-md w-fit rounded-xl hover:shadow-xl hover:shadow-secondary"
             >

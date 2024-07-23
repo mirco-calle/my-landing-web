@@ -10,9 +10,9 @@ export const AvatarServices = () => {
     >
       <Image
         src="/services.png"
-        width={600}
-        height={600}
-        className="w-[600px] h-full"
+        width={150}
+        height={150}
+        className="w-[150px] h-full"
         alt="Avatar"
       />
     </MotionTransition>

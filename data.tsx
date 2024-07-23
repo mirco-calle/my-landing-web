@@ -33,11 +33,7 @@ export const socialNetworks = [
     logo: <Facebook size={30} strokeWidth={1} />,
     src: "#!",
   },
-  {
-    id: 4,
-    logo: <Rss size={30} strokeWidth={1} />,
-    src: "#!",
-  },
+
   {
     id: 5,
     logo: <Twitch size={30} strokeWidth={1} />,
@@ -82,35 +78,35 @@ export const dataAboutPage = [
   {
     id: 1,
     title: "Frontend Developer",
-    subtitle: "TechSolutions",
+    subtitle: "Freelancer: Workana, Fiverr, Upwork",
     description:
-      "Colabora con un equipo dinámico para desarrollar interfaces de usuario atractivas y funcionales que impulsen el éxito de nuestros clientes en el mundo digital.",
+      "Colabora con clientes para desarrollar interfaces de usuario atractivas y funcionales que impulsen el éxito de nuestros clientes en el mundo digital.",
     date: "Nov 2023 ",
   },
   {
     id: 2,
     title: "Creador de Experiencias Digitales",
-    subtitle: "PixelCrafters",
+    subtitle: "freelancer: Workana, Fiverr, UpWork",
     description:
-      "Trabaja en proyectos emocionantes que desafían los límites de la creatividad y la tecnología. Únete a nosotros mientras creamos experiencias digitales cautivadoras que inspiran y cautivan a nuestros usuarios.",
+      " Edicion de videos impelementando la inteligenica artifical en plataformas como Canva, Capcut.",
     date: "May 2021",
   },
-  {
-    id: 3,
-    title: "Especialista en Desarrollo Frontend",
-    subtitle: "CodeForge Solutions",
-    description:
-      "Como desarrollador frontend, tendrás la oportunidad de colaborar en proyectos diversos y desafiantes que te permitirán expandir tus habilidades y dejar tu huella en el mundo digital.",
-    date: "Ago 2019",
-  },
-  {
-    id: 4,
-    title: "Prácticas Grado",
-    subtitle: "WebWizards Inc.",
-    description:
-      "Únete a nosotros mientras creamos sitios web y aplicaciones interactivas que sorprenden y deleitan a nuestros clientes. Si tienes pasión por el diseño y la programación, y disfrutas colaborar en un entorno creativo, ¡queremos conocerte!        ",
-    date: "Mar 2018",
-  },
+  // {
+  //   id: 3,
+  //   title: "Especialista en Desarrollo Frontend",
+  //   subtitle: "CodeForge Solutions",
+  //   description:
+  //     "Como desarrollador frontend, tendrás la oportunidad de colaborar en proyectos diversos y desafiantes que te permitirán expandir tus habilidades y dejar tu huella en el mundo digital.",
+  //   date: "Ago 2019",
+  // },
+  // {
+  //   id: 4,
+  //   title: "Prácticas Grado",
+  //   subtitle: "WebWizards Inc.",
+  //   description:
+  //     "Únete a nosotros mientras creamos sitios web y aplicaciones interactivas que sorprenden y deleitan a nuestros clientes. Si tienes pasión por el diseño y la programación, y disfrutas colaborar en un entorno creativo, ¡queremos conocerte!        ",
+  //   date: "Mar 2018",
+  // },
 ];
 
 export const dataCounter = [

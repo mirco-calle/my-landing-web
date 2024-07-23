@@ -39,7 +39,7 @@ export const PortfolioBox = (props: PortfolioBoxProps) => {
           className="p-2 transition duration-150 rounded-lg
                      bg-secondary hover:bg-secondary/80"
         >
-          GitHub
+          Ver Pagina
         </Link>
       </div>
     </div>
