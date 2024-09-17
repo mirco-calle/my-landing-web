@@ -178,8 +178,8 @@ export const dataPortfolio = [
     id: 1,
     title: "Web Pro",
     image: "/image-1.jpg",
-    urlGithub: "#!",
-    urlDemo: "#!",
+    urlGithub: "https://github.com/mirco-calle/RestaurantPageByMirco",
+    urlDemo: "https://pizza-page-by-mircodev.netlify.app",
   },
   {
     id: 2,
