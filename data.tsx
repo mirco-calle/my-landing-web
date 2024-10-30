@@ -2,7 +2,7 @@ import {
   BookText,
   CodeSquare,
   HomeIcon,
-  UserRound,
+  Store,
   Linkedin,
   Twitter,
   Rss,
@@ -13,7 +13,7 @@ import {
   Computer,
   Book,
   Rocket,
-  Speech,
+  ContactRound,
   Facebook,
 } from "lucide-react";
 
@@ -44,33 +44,39 @@ export const socialNetworks = [
 export const itemsNavbar = [
   {
     id: 1,
-    title: "Home",
+    title: "Inicio",
     icon: <HomeIcon size={25} color="#fff" strokeWidth={1} />,
     link: "/",
   },
   {
     id: 2,
-    title: "User",
-    icon: <UserRound size={25} color="#fff" strokeWidth={1} />,
-    link: "/about-me",
-  },
-  {
-    id: 3,
-    title: "Book",
+    title: "Servicios",
     icon: <BookText size={25} color="#fff" strokeWidth={1} />,
     link: "/services",
   },
   {
-    id: 4,
-    title: "Target",
+    id: 3,
+    title: "Proyectos",
     icon: <CodeSquare size={25} color="#fff" strokeWidth={1} />,
     link: "/portfolio",
   },
   {
+    id: 4,
+    title: "Tienda",
+    icon: <Store size={25} color="#fff" strokeWidth={1} />,
+    link: "/tienda",
+  },
+  {
     id: 5,
-    title: "Home",
-    icon: <Speech size={25} color="#fff" strokeWidth={1} />,
-    link: "/testimonials",
+    title: "Blog",
+    icon: <Rss size={25} color="#fff" strokeWidth={1} />,
+    link: "/blog",
+  },
+  {
+    id: 6,
+    title: "Contacto",
+    icon: <ContactRound size={25} color="#fff" strokeWidth={1} />,
+    link: "/contacto",
   },
 ];
 

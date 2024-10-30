@@ -1,6 +1,5 @@
 import CoverParticles from "@/components/cover-particles";
 import Introduction from "@/components/introduction";
-import Navbar from "@/components/navbar";
 import TransitionPage from "@/components/TransitionPage";
 export default function Home() {
   return (

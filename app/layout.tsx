@@ -13,8 +13,8 @@ import Header from "@/components/header";
 const urbanist = Urbanist({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "landingMirco",
-  description: "Landing page made by MircoCalle",
+  title: "MircoDev",
+  description: "Innovación en desarrollo web y soluciones tecnológicas.",
 };
 
 export default function RootLayout({
@@ -23,11 +23,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body className={urbanist.className}>
-        <Navbar />
         <Header />
         {children}
+        <Navbar />
       </body>
     </html>
   );

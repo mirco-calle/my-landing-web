@@ -5,10 +5,10 @@ import { TypeAnimation } from "react-type-animation";
 const Introduction = () => {
   return (
     <div className="z-20 w-full bg-darkBg/60">
-      <div className="z-20 grid items-center h-full p-6 py-20 md:py-0 md:grid-cols-2">
+      <div className="z-20 grid items-center h-full p-6 py-20 pt-32 md:py-0 md:grid-cols-2">
         <Image
           src="/home-4.png"
-          className="mx-auto py-10"
+          className="mx-auto py-10 md:size-80 md:py-0"
           priority
           width="150"
           height="150"
@@ -37,7 +37,7 @@ const Introduction = () => {
               className=" block font-bold text-secondary"
             />
           </h1>
-          <p className="mx-auto mb-2 text-xl md:mx-0 md:mb-8">
+          <p className="mx-auto mb-2 text-lg md:mx-0 md:mb-8">
             Como desarrollador frontend y diseñador Grafico, me dedico a
             combinar diseño y funcionalidad para crear experiencias digitales
             impactantes y accesibles
