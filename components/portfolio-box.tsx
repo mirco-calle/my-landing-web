@@ -22,7 +22,7 @@ export const PortfolioBox = (props: PortfolioBoxProps) => {
         alt="Image product"
         width={200}
         height={200}
-        className="w-full md:w-[200px] rounded-2xl h-auto"
+        className="w-full md:w-full rounded-2xl h-auto"
       />
       <div className="flex gap-5 mt-5">
         <Link

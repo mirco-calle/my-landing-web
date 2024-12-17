@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={urbanist.className}>
+      <body className={urbanist.className} suppressHydrationWarning>
         <Header />
         {children}
         <Navbar />

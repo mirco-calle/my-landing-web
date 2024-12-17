@@ -1,15 +1,29 @@
 import Image from "next/image";
-import React from "react";
+import { FC } from "react";
 
-export const CircleImage = () => {
+interface CircleImageProps {
+  className?: string;
+  width?: number;
+  height?: number;
+}
+
+export const CircleImage: FC<CircleImageProps> = ({
+  className = "",
+  width = 300,
+  height = 300,
+}) => {
   return (
-    <div className="bottom-0 right-0 hidden md:inline-block md:absolute">
+    <div
+      className={`bottom-0 right-0 hidden md:inline-block md:absolute ${className}`}
+    >
       <Image
         src="/circles.png"
-        width={300}
-        height={300}
-        alt="Circle"
+        width={width}
+        height={height}
+        alt="Círculo decorativo"
         className="w-full h-full"
+        priority={false}
+        quality={75}
       />
     </div>
   );

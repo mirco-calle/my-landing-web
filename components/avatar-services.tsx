@@ -10,10 +10,12 @@ export const AvatarServices = () => {
     >
       <Image
         src="/services.png"
-        width={150}
-        height={150}
-        className="w-[150px] h-full"
-        alt="Avatar"
+        width={300}
+        height={300}
+        className="w-full h-full"
+        alt="Avatar servicios"
+        priority
+        quality={75}
       />
     </MotionTransition>
   );
