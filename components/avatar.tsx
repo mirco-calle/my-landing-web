@@ -10,8 +10,8 @@ export const Avatar = () => {
     >
       <Image
         src="/avatar-1.png"
-        width={400}
-        height={400}
+        width={300}
+        height={300}
         className="w-full h-full"
         alt="Avatar"
       />

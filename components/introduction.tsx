@@ -8,7 +8,7 @@ const Introduction = () => {
       <div className="z-20 grid items-center h-full p-6 py-20 pt-32 md:py-0 md:grid-cols-2">
         <Image
           src="/home-4.png"
-          className="mx-auto py-10 md:size-80 md:py-0"
+          className="mx-auto py-5 md:size-80 md:py-0"
           priority
           width="150"
           height="150"
@@ -38,9 +38,9 @@ const Introduction = () => {
             />
           </h1>
           <p className="mx-auto mb-2 text-lg md:mx-0 md:mb-8">
-            Como desarrollador frontend y diseñador Grafico, me dedico a
-            combinar diseño y funcionalidad para crear experiencias digitales
-            impactantes y accesibles
+            Como desarrollador frontend y diseñador Web, me dedico a combinar
+            diseño y funcionalidad para crear experiencias digitales impactantes
+            y accesibles
           </p>
           <div className="flex items-center justify-center gap-3 md:justify-start md:gap-10">
             <Link

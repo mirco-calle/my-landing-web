@@ -1,5 +1,5 @@
 "use client";
-import MotionTransition from "./transition-component";
+import MotionTransition from "../transition-component";
 import Image from "next/image";
 
 export const AvatarServices = () => {

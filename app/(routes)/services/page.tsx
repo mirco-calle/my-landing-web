@@ -1,6 +1,6 @@
-import { AvatarServices } from "@/components/avatar-services";
+import { AvatarServices } from "@/components/servicesComponent/avatar-services";
 import { CircleImage } from "@/components/circle-image";
-import { SliderServices } from "@/components/slider-services";
+import { SliderServices } from "@/components/servicesComponent/slider-services";
 import TransitionPage from "@/components/TransitionPage";
 import Link from "next/link";
 
