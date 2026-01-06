@@ -56,7 +56,9 @@ export const ToolCard = ({ tool }: ToolCardProps) => {
 
       {/* My Review */}
       <div className="p-4 bg-slate-800/50 rounded-lg mb-4">
-        <p className="text-sm italic text-slate-300">"{tool.myReview}"</p>
+        <p className="text-sm italic text-slate-300">
+          &ldquo;{tool.myReview}&rdquo;
+        </p>
         <p className="text-xs text-slate-400 mt-2">- Mirco Calle</p>
       </div>
 
