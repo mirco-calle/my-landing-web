@@ -9,17 +9,17 @@ const Header = () => {
   return (
     <MotionTransition
       position="botton"
-      className="absolute z-40 inline-block w-full top-5 md:top-5 px-20"
+      className="absolute z-40 inline-block w-full top-5 md:top-5 px-6 md:px-20"
     >
       <header>
         <div className="container justify-between max-w-6xl mx-auto md:flex">
           <Link href="/">
-            <h1 className="my-3 text-4xl font-bold text-center md:text-left">
+            <h1 className="my-3 text-3xl md:text-4xl font-bold text-center md:text-left">
               Mirco
-              <span className="text-secondary">Dev</span>
+              <span className="text-gradient"> Dev </span>
               <br />
-              <span className="text-base py-0">
-                Desarrollo Web y Tecnologias
+              <span className="text-xs md:text-sm text-slate-400 font-normal">
+                Automatización & Sistemas Inteligentes
               </span>
             </h1>
           </Link>
@@ -29,19 +29,22 @@ const Header = () => {
                 key={id}
                 href={src}
                 target="_blank"
-                className="transition-all duration-300 hover:text-secondary"
+                className="transition-all duration-300 hover:text-tech-400 hover:scale-110"
               >
                 {logo}
               </Link>
             ))}
           </div>
           <nav className="max-768:hidden">
-            <div className="flex items-center justify-center gap-2 px-4 py-1 rounded-full bg-white/15 background-blur-sm">
+            <div className="flex items-center justify-center gap-2 px-4 py-1 rounded-full glass">
               {itemsNavbar.map((item) => (
                 <div
                   key={item.id}
-                  className={`px-3 py-2 transition duration-150 rounded-full cursor-pointer hover:bg-secondary
-                         ${router === item.link && "bg-secondary"}`}
+                  className={`px-3 py-2 transition duration-300 rounded-full cursor-pointer hover:bg-tech-500/20
+                         ${
+                           router === item.link &&
+                           "bg-tech-500/30 text-tech-400"
+                         }`}
                 >
                   <Link href={item.link}>{item.title}</Link>
                 </div>

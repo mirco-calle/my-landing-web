@@ -14,32 +14,48 @@ interface PortfolioBoxProps {
 export const PortfolioBox = (props: PortfolioBoxProps) => {
   const { data } = props;
   const { id, title, image, urlGithub, urlDemo } = data;
+
   return (
-    <div className="p-4 border border-teal-50 rounded-xl">
-      <h3 className="mb-4 text-xl">{title}</h3>
-      <Image
-        src={image}
-        alt="Image product"
-        width={200}
-        height={200}
-        className="w-full md:w-full rounded-2xl h-auto"
-      />
-      <div className="flex gap-5 mt-5">
-        <Link
-          href={urlGithub}
-          target="_blank"
-          className="p-2 transition duration-150 rounded-lg
-                     bg-slate-500 hover:bg-slate-500/80"
-        >
-          GitHub
-        </Link>
+    <div className="group card-hover p-6 animate-fade-in">
+      <div className="relative overflow-hidden rounded-lg mb-4">
+        <Image
+          src={image}
+          alt={title}
+          width={400}
+          height={300}
+          className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/50 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-300" />
+
+        {/* Overlay badge */}
+        <div className="absolute top-4 right-4 px-3 py-1 bg-tech-500/90 backdrop-blur-sm rounded-full text-xs font-medium">
+          IA & Automatización
+        </div>
+      </div>
+
+      <h3 className="text-xl font-bold mb-3 text-white group-hover:text-tech-400 transition-colors">
+        {title}
+      </h3>
+
+      <p className="text-slate-400 text-sm mb-4 line-clamp-2">
+        Sistema inteligente implementado con resultados medibles y
+        automatización completa.
+      </p>
+
+      <div className="flex gap-3">
         <Link
           href={urlDemo}
           target="_blank"
-          className="p-2 transition duration-150 rounded-lg
-                     bg-secondary hover:bg-secondary/80"
+          className="flex-1 btn-primary text-center text-sm py-2"
         >
-          Ver Pagina
+          Ver Caso Demo
+        </Link>
+        <Link
+          href={urlGithub}
+          target="_blank"
+          className="px-4 py-2 bg-slate-700/50 hover:bg-slate-700 text-slate-300 hover:text-white rounded-lg transition-all duration-300 text-sm font-medium"
+        >
+          Detalles GitHub
         </Link>
       </div>
     </div>

@@ -1,59 +1,65 @@
-"use client";
-import { CircleImage } from "@/components/circle-image";
+import { BlogHero } from "@/components/blog/blog-hero";
+import { BlogCard } from "@/components/blog/blog-card";
+import { BlogSidebar } from "@/components/blog/blog-sidebar";
 import TransitionPage from "@/components/TransitionPage";
-import { dataTestimonials } from "@/data";
-import Image from "next/image";
-import { Pagination } from "swiper/modules";
-import { Swiper } from "swiper/react";
-import { SwiperSlide } from "swiper/react";
+import { CircleImage } from "@/components/circle-image";
+import { dataBlogPosts } from "@/data";
 
-const TestimonialsPage = () => {
+export default function BlogPage() {
+  const featuredPosts = dataBlogPosts.filter((p) => p.featured);
+  const regularPosts = dataBlogPosts.filter((p) => !p.featured);
+
   return (
     <>
       <TransitionPage />
-      <div className="flex flex-col justify-center h-lvh">
-        <CircleImage />
-        <h1 className="text-2xl leading-tight text-center md:text-4xl md:mb-5">
-          Algunos comentarios
-          <span className="block font-bold text-secondary">
-            de nustros clientes
-          </span>
-        </h1>
-        <div className="flex items-center justify-center">
-          <div>
-            <Swiper
-              breakpoints={{
-                320: {
-                  slidesPerView: 1,
-                  spaceBetween: 15,
-                },
-              }}
-              freeMode={true}
-              pagination={{
-                clickable: true,
-              }}
-              modules={[Pagination]}
-              className="h-[380px] md:h-[300px] w-[270px] md:w-[550px]"
-            >
-              {dataTestimonials.map(({ id, name, description, imageUrl }) => (
-                <SwiperSlide key={id}>
-                  <Image
-                    src={imageUrl}
-                    alt={name}
-                    width={100}
-                    height={100}
-                    className="mx-auto rounded-full"
-                  />
-                  <h4 className="text-center">{name}</h4>
-                  <p className="mt-5 text-center">{description}</p>
-                </SwiperSlide>
-              ))}
-            </Swiper>
+      <CircleImage />
+
+      <BlogHero />
+
+      <div className="container max-w-7xl mx-auto px-6 pb-20">
+        <div className="grid lg:grid-cols-3 gap-12">
+          {/* Main Content */}
+          <div className="lg:col-span-2">
+            {/* Featured Posts */}
+            {featuredPosts.length > 0 && (
+              <section className="mb-12">
+                <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
+                  <span className="text-gradient">⭐</span> Artículos Destacados
+                </h2>
+                <div className="grid md:grid-cols-2 gap-6">
+                  {featuredPosts.map((post) => (
+                    <BlogCard key={post.id} post={post} />
+                  ))}
+                </div>
+              </section>
+            )}
+
+            {/* All Posts */}
+            {regularPosts.length > 0 && (
+              <section>
+                <h2 className="text-2xl font-bold mb-6">Todos los Artículos</h2>
+                <div className="grid md:grid-cols-2 gap-6">
+                  {regularPosts.map((post) => (
+                    <BlogCard key={post.id} post={post} />
+                  ))}
+                </div>
+              </section>
+            )}
+
+            {/* Empty State */}
+            {dataBlogPosts.length === 0 && (
+              <div className="card p-12 text-center">
+                <p className="text-xl text-slate-400">
+                  Próximamente publicaremos artículos sobre automatización e IA
+                </p>
+              </div>
+            )}
           </div>
+
+          {/* Sidebar */}
+          <BlogSidebar />
         </div>
       </div>
     </>
   );
-};
-
-export default TestimonialsPage;
+}

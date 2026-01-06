@@ -1,6 +1,8 @@
 "use client";
 import { fadeIn } from "@/utils/motion-transition";
 import { motion } from "framer-motion";
+import { memo } from "react";
+
 interface MotionTransitionProps {
   children: React.ReactNode;
   position: "right" | "botton";
@@ -21,4 +23,4 @@ const MotionTransition = (props: MotionTransitionProps) => {
   );
 };
 
-export default MotionTransition;
+export default memo(MotionTransition);

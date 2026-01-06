@@ -1,36 +1,111 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# dependencies
+# ==================== DEPENDENCIES ====================
 /node_modules
 /.pnp
 .pnp.js
 .yarn/install-state.gz
+package-lock.json
+yarn.lock
 
-# testing
+# ==================== TESTING ====================
 /coverage
+.nyc_output
 
-# next.js
+# ==================== NEXT.JS ====================
 /.next/
 /out/
+.next
+dist
+build
 
-# production
+# ==================== PRODUCTION ====================
 /build
+*.bundle.js
 
-# misc
+# ==================== IDE & EDITOR ====================
+.vscode
+.idea
 .DS_Store
-*.pem
+*.swp
+*.swo
+*~
+.sublime-project
+.sublime-workspace
+.project
+.classpath
+*.code-workspace
+.vscode-test
+.history/
 
-# debug
+# ==================== ENVIRONMENT VARIABLES ====================
+.env
+.env.local
+.env*.local
+.env.*.local
+
+# ==================== DEBUG & LOGS ====================
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+lerna-debug.log*
+*.log
+logs/
+*.pid
+*.pid.lock
 
-# local env files
-.env*.local
+# ==================== OS FILES ====================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.AppleDouble
+.LSOverride
 
-# vercel
+# ==================== TEMPORARY & CACHE ====================
+.cache
+.eslintcache
+.node_repl_history
+.vuepress/dist
+.cache/
+.parcel-cache
+.nuxt
+dist
+.cache/
+.vuepress/dist
+*.pem
+
+# ==================== VERCEL ====================
 .vercel
+.vercel/
 
-# typescript
+# ==================== TYPESCRIPT ====================
 *.tsbuildinfo
 next-env.d.ts
+tsconfig.tsbuildinfo
+
+# ==================== SYSTEM ====================
+.env.local.example
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ==================== BACKUP FILES ====================
+*.backup
+*.bak
+*.tmp
+*.temp
+
+# ==================== NODE.JS ====================
+.grunt
+bower_components/
+node_modules/
+jspm_packages/
+
+# ==================== MISC ====================
+.turbo
+dist-ssr
+*.local

@@ -1,26 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
-  color: #fff;
-  background: #413472;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  html,
+  body {
+    color: #f8fafc;
+    background: #0a0e27;
+    font-family: "Inter", system-ui, sans-serif;
+  }
+
+  main {
+    background: linear-gradient(135deg, #0a0e27 0%, #1e293b 100%);
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
 }
 
-main {
-  background: #5a5d81;
-  height: 100vh;
-  height: 100dvh;
+@layer components {
+  /* Glassmorphism effect */
+  .glass {
+    background: rgba(30, 41, 59, 0.4);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(148, 163, 184, 0.1);
+  }
+
+  /* Card styles */
+  .card {
+    @apply bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl;
+  }
+
+  .card-hover {
+    @apply card transition-all duration-300 hover:border-tech-500/50 hover:shadow-glow-blue;
+  }
+
+  /* Button styles */
+  .btn-primary {
+    @apply px-6 py-3 bg-gradient-accent text-white font-medium rounded-lg 
+           transition-all duration-300 hover:shadow-glow-blue hover:scale-105;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 border-2 border-tech-500 text-tech-400 font-medium rounded-lg 
+           transition-all duration-300 hover:bg-tech-500/10 hover:shadow-glow-blue;
+  }
+
+  .btn-success {
+    @apply px-6 py-3 bg-gradient-intelligent text-white font-medium rounded-lg 
+           transition-all duration-300 hover:shadow-glow-green hover:scale-105;
+  }
 }
-/* para los puntitos sliders de la pagina de servicios */
+
+/* Swiper pagination dots */
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets
   .swiper-pagination-bullet {
-  background-color: #d8be48;
+  background-color: #3b82f6;
 }
+
+.swiper-pagination-bullet-active {
+  background-color: #10b981 !important;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-tech-400 to-intelligent-400 bg-clip-text text-transparent;
+  }
+
+  .border-gradient {
+    border-image: linear-gradient(135deg, #3b82f6, #10b981) 1;
   }
 }
