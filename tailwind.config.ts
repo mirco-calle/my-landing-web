@@ -56,11 +56,6 @@ const config: Config = {
         "glow-green": "0 0 20px rgba(16, 185, 129, 0.3)",
         card: "0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2)",
       },
-      animation: {
-        "fade-in": "fadeIn 0.5s ease-in-out",
-        "slide-up": "slideUp 0.6s ease-out",
-        "slide-in": "slideIn 0.6s ease-out",
-      },
       keyframes: {
         fadeIn: {
           "0%": { opacity: "0" },
@@ -74,6 +69,18 @@ const config: Config = {
           "0%": { transform: "translateX(-20px)", opacity: "0" },
           "100%": { transform: "translateX(0)", opacity: "1" },
         },
+        blob: {
+          "0%": { transform: "translate(0px, 0px) scale(1)" },
+          "33%": { transform: "translate(30px, -50px) scale(1.1)" },
+          "66%": { transform: "translate(-20px, 20px) scale(0.9)" },
+          "100%": { transform: "translate(0px, 0px) scale(1)" },
+        },
+      },
+      animation: {
+        "fade-in": "fadeIn 0.5s ease-in-out",
+        "slide-up": "slideUp 0.6s ease-out",
+        "slide-in": "slideIn 0.6s ease-out",
+        blob: "blob 20s infinite", // Slowed down for smoother effect
       },
     },
   },

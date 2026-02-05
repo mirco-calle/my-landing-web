@@ -17,7 +17,7 @@
   }
 
   main {
-    background: linear-gradient(135deg, #0a0e27 0%, #1e293b 100%);
+    background: transparent;
     min-height: 100vh;
     min-height: 100dvh;
   }
@@ -79,5 +79,21 @@
 
   .border-gradient {
     border-image: linear-gradient(135deg, #3b82f6, #10b981) 1;
+  }
+}
+
+/* Animated Background Keyframes */
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.05);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.95);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
   }
 }

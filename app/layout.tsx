@@ -9,6 +9,7 @@ import "./globals.css";
 
 import Navbar from "@/components/navbar";
 import Header from "@/components/header";
+import CoverParticles from "@/components/cover-particles";
 
 const urbanist = Urbanist({ subsets: ["latin"] });
 
@@ -25,9 +26,15 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={urbanist.className} suppressHydrationWarning>
-        <Header />
-        {children}
-        <Navbar />
+        {/* Global Animated Particles Background */}
+        <CoverParticles />
+
+        {/* Content Layer - z-index: 10 */}
+        <div className="relative z-10">
+          <Header />
+          {children}
+          <Navbar />
+        </div>
       </body>
     </html>
   );

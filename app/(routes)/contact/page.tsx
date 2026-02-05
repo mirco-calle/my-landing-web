@@ -16,7 +16,7 @@ const ContactPage = () => {
       <CircleImage />
 
       {/* Hero Section */}
-      <section className="relative z-10 min-h-fit md:min-h-screen flex items-center py-20 md:py-32">
+      <section className="relative z-10 min-h-fit md:min-h-screen flex items-center pt-40 pb-20 md:py-32">
         <div className="container max-w-6xl mx-auto px-4 md:px-6 lg:px-8">
           {/* Header */}
           <div className="max-w-3xl mx-auto text-center mb-12 md:mb-16">
@@ -38,8 +38,8 @@ const ContactPage = () => {
                   label === "Email"
                     ? `mailto:mirkex.guitar@gmail.com`
                     : label === "WhatsApp"
-                    ? "https://wa.link/epmdlm"
-                    : "#"
+                      ? "https://wa.link/epmdlm"
+                      : "#"
                 }
                 target={
                   label !== "Respuesta" && label !== "Ubicación"
@@ -109,7 +109,7 @@ const ContactPage = () => {
                         className="flex-shrink-0 text-tech-400 mt-1 group-hover:translate-x-1 transition-transform"
                       />
                     </Link>
-                  )
+                  ),
                 )}
               </div>
 

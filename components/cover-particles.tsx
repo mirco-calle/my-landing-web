@@ -48,7 +48,7 @@ const CoverParticles = () => {
                 color: "#3B82F6",
                 distance: 150,
                 enable: true,
-                opacity: 0.3,
+                opacity: 1,
                 width: 1,
               },
               move: {
@@ -58,14 +58,14 @@ const CoverParticles = () => {
                   default: "bounce",
                 },
                 random: false,
-                speed: 1,
+                speed: 2,
                 straight: false,
               },
               number: {
                 density: {
                   enable: true,
                 },
-                value: 40,
+                value: 80,
               },
               opacity: {
                 value: 0.4,
@@ -74,7 +74,7 @@ const CoverParticles = () => {
                 type: "circle",
               },
               size: {
-                value: { min: 1, max: 5 },
+                value: { min: 8, max: 10 },
               },
             },
             detectRetina: true,

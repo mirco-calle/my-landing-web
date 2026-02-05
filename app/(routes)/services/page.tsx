@@ -14,7 +14,7 @@ const Services = () => {
 
       {/* Hero Section */}
       <div className="relative z-10 min-h-screen flex items-center">
-        <div className="container max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-20 md:py-32">
+        <div className="container max-w-7xl mx-auto px-6 md:px-12 lg:px-20 pt-40 pb-20 md:py-32">
           {/* Header Section */}
           <div className="max-w-4xl mx-auto text-center mb-16 md:mb-20">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">

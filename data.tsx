@@ -1,6 +1,5 @@
 import {
   BookText,
-  CodeSquare,
   HomeIcon,
   Linkedin,
   Twitter,
@@ -10,11 +9,9 @@ import {
   Crop,
   Pencil,
   Computer,
-  Book,
   Rocket,
   ContactRound,
   Facebook,
-  ShoppingCart,
 } from "lucide-react";
 
 export const socialNetworks = [
@@ -56,30 +53,12 @@ export const itemsNavbar = [
   },
   {
     id: 3,
-    title: "Casos de Éxito",
+    title: "Proyectos",
     icon: <BookText size={25} color="#fff" strokeWidth={1} />,
     link: "/portfolio",
   },
   {
     id: 4,
-    title: "Blog",
-    icon: <Book size={25} color="#fff" strokeWidth={1} />,
-    link: "/blog",
-  },
-  {
-    id: 5,
-    title: "Productos",
-    icon: <ShoppingCart size={25} color="#fff" strokeWidth={1} />,
-    link: "/productos",
-  },
-  {
-    id: 6,
-    title: "Herramientas",
-    icon: <CodeSquare size={25} color="#fff" strokeWidth={1} />,
-    link: "/herramientas",
-  },
-  {
-    id: 7,
     title: "Contacto",
     icon: <ContactRound size={25} color="#fff" strokeWidth={1} />,
     link: "/contact",
@@ -155,12 +134,7 @@ export const serviceData = [
     description:
       "Diseño soluciones que optimizan inventarios, gestionan recursos y automatizan decisiones operativas con IA, liberando tiempo para lo estratégico.",
   },
-  {
-    icon: <Book />,
-    title: "Análisis Predictivo & BI",
-    description:
-      "Decisiones basadas en datos, no en intuición. Dashboards inteligentes que predicen tendencias y revelan oportunidades ocultas en tu negocio.",
-  },
+
   {
     icon: <Pencil />,
     title: "Chatbots & Asistentes IA",
