@@ -21,9 +21,9 @@ export const PortfolioBox = (props: PortfolioBoxProps) => {
         <Image
           src={image}
           alt={title}
-          width={400}
-          height={300}
-          className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110"
+          width={600}
+          height={400}
+          className="w-full h-64 md:h-72 object-cover transition-transform duration-500 group-hover:scale-110"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/50 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-300" />
 
@@ -33,13 +33,14 @@ export const PortfolioBox = (props: PortfolioBoxProps) => {
         </div>
       </div>
 
-      <h3 className="text-xl font-bold mb-3 text-white group-hover:text-tech-400 transition-colors">
+      <h3 className="text-2xl font-bold mb-3 text-white group-hover:text-tech-400 transition-colors">
         {title}
       </h3>
 
-      <p className="text-slate-400 text-sm mb-4 line-clamp-2">
-        Sistema inteligente implementado con resultados medibles y
-        automatización completa.
+      <p className="text-slate-400 text-base mb-6 line-clamp-3">
+        Implementación de soluciones avanzadas con IA y automatización para
+        optimizar resultados y transformar procesos de negocio de manera
+        medible.
       </p>
 
       <div className="flex gap-3">

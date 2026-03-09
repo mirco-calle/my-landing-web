@@ -146,24 +146,24 @@ export const serviceData = [
 export const dataPortfolio = [
   {
     id: 1,
-    title: "Landing Page para restaurante",
+    title: "Landing Page para restaurantes",
     image: "/image-1.jpg",
     urlGithub: "https://github.com/mirco-calle/RestaurantPageByMirco.git",
     urlDemo: "https://pizza-page-by-mircodev.netlify.app/",
   },
   {
     id: 2,
-    title: "Plataforma Automatizada de Cálculo y Gestión de Presupuestos",
-    image: "/image-2.jpg",
-    urlGithub: "#!",
-    urlDemo: "#!",
+    title: "DigiCard - Sistema de Gestión Multi-Tenant para Restaurantes",
+    image: "/image-2.png",
+    urlGithub: "https://github.com/mirco-calle/DigiCard",
+    urlDemo: "https://digicardbo.netlify.app/",
   },
   {
     id: 3,
-    title: "Sistema Inteligente de Carta Digital para Restaurantes",
+    title: "LoveArt Desktop - AR Studio & Management",
     image: "/image-3.jpg",
-    urlGithub: "#!",
-    urlDemo: "#!",
+    urlGithub: "https://github.com/mirco-calle/loveARt-web",
+    urlDemo: "https://loveartweb.netlify.app/",
   },
   {
     id: 4,
