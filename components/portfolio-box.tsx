@@ -8,12 +8,13 @@ interface PortfolioBoxProps {
     image: string;
     urlGithub: string;
     urlDemo: string;
+    description: string;
   };
 }
 
 export const PortfolioBox = (props: PortfolioBoxProps) => {
   const { data } = props;
-  const { id, title, image, urlGithub, urlDemo } = data;
+  const { id, title, image, urlGithub, urlDemo, description } = data;
 
   return (
     <div className="group card-hover p-6 animate-fade-in">
@@ -38,9 +39,7 @@ export const PortfolioBox = (props: PortfolioBoxProps) => {
       </h3>
 
       <p className="text-slate-400 text-base mb-6 line-clamp-3">
-        Implementación de soluciones avanzadas con IA y automatización para
-        optimizar resultados y transformar procesos de negocio de manera
-        medible.
+        {description}
       </p>
 
       <div className="flex gap-3">

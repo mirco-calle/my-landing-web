@@ -150,27 +150,35 @@ export const dataPortfolio = [
     image: "/image-1.jpg",
     urlGithub: "https://github.com/mirco-calle/RestaurantPageByMirco.git",
     urlDemo: "https://pizza-page-by-mircodev.netlify.app/",
+    description:
+      "Una landing page moderna y atractiva diseñada específicamente para restaurantes, con menú digital y diseño responsivo.",
   },
   {
     id: 2,
     title: "DigiCard - Sistema de Gestión Multi-Tenant para Restaurantes",
     image: "/image-2.png",
-    urlGithub: "https://github.com/mirco-calle/DigiCard",
+    urlGithub: "https://github.com/mirco-calle/digital_menu_for_restaurants",
     urlDemo: "https://digicardbo.netlify.app/",
+    description:
+      "Plataforma SaaS multi-tenant que permite a los restaurantes gestionar sus menús digitales y recibir pedidos fácilmente.",
   },
   {
     id: 3,
     title: "LoveArt Desktop - AR Studio & Management",
-    image: "/image-3.jpg",
+    image: "/image-3.png",
     urlGithub: "https://github.com/mirco-calle/loveARt-web",
     urlDemo: "https://loveartweb.netlify.app/",
+    description:
+      "Aplicación de escritorio para gestión de contenido de Realidad Aumentada, enfoca tu fotografia con esta app y tu foto cobra vida",
   },
   {
     id: 4,
-    title: "Sistema de Automatización de Procesos de Negocio con n8n",
-    image: "/image-5.jpg",
-    urlGithub: "#!",
-    urlDemo: "#!",
+    title: "HPress-Calculo de presupuestos de obra",
+    image: "/image-4.png",
+    urlGithub: "https://github.com/mirco-calle",
+    urlDemo: "https://hpress.netlify.app/",
+    description:
+      "Plataforma SaaS multi-tenant que permite el Calculo de presupuestos de obra para ingenieros civiles, rapido con catalogo de referencia ",
   },
 ];
 
