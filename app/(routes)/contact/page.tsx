@@ -20,12 +20,14 @@ const ContactPage = () => {
         <div className="container max-w-6xl mx-auto px-4 md:px-6 lg:px-8">
           {/* Header */}
           <div className="max-w-3xl mx-auto text-center mb-12 md:mb-16">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-tech-500/10 border border-tech-500/20 text-xs font-semibold text-tech-400 uppercase tracking-wider mb-4">
+              Contacto & Colaboración
+            </div>
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 md:mb-6">
-              Vamos a<span className="text-gradient block">Colaborar</span>
+              Conversemos sobre tu <span className="text-gradient block">Proyecto Técnico</span>
             </h1>
             <p className="text-base md:text-lg text-slate-300 leading-relaxed">
-              Cuéntame sobre tu proyecto, automatización o idea. Responderé en
-              menos de 24 horas con soluciones personalizadas para tu negocio.
+              Cuéntame sobre tus requerimientos de modelado BIM (Revit), soporte en cálculo estructural (Robot), presupuestos de obra o desarrollo de software y SaaS. Responderé en menos de 24 horas.
             </p>
           </div>
 

@@ -13,13 +13,18 @@ const Header = () => {
     >
       <header>
         <div className="container justify-between max-w-6xl mx-auto md:flex">
-          <Link href="/">
-            <h1 className="my-3 text-3xl md:text-4xl font-bold text-center md:text-left">
-              Mirco
-              <span className="text-gradient"> Dev </span>
+          <Link href="/" className="group">
+            <h1 className="my-3 text-2xl md:text-3xl font-bold text-center md:text-left tracking-tight">
+              Mirco{" "}
+              <span className="text-gradient group-hover:opacity-90 transition-opacity">
+                Calle
+              </span>
+              <span className="text-[10px] ml-2 px-2 py-0.5 rounded-full border border-tech-500/30 text-tech-400 font-mono font-normal">
+                mircodev
+              </span>
               <br />
-              <span className="text-xs md:text-sm text-slate-400 font-normal">
-                Automatización & Sistemas Inteligentes
+              <span className="text-xs md:text-sm text-slate-400 font-medium block mt-0.5">
+                Ingeniería Civil · Software & Tecnología para Construcción
               </span>
             </h1>
           </Link>

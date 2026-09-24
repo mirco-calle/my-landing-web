@@ -2,39 +2,22 @@ import {
   BookText,
   HomeIcon,
   Linkedin,
-  Twitter,
-  Rss,
-  Twitch,
-  Youtube,
-  Crop,
-  Pencil,
-  Computer,
   Rocket,
   ContactRound,
-  Facebook,
+  Building2,
+  Layers,
+  Calculator,
+  Code2,
+  Bot,
+  Compass,
 } from "lucide-react";
 
 export const socialNetworks = [
   {
     id: 1,
-    logo: <Youtube size={30} strokeWidth={1} />,
-    src: "#!",
-  },
-  {
-    id: 2,
-    logo: <Linkedin size={30} strokeWidth={1} />,
-    src: "#!",
-  },
-  {
-    id: 3,
-    logo: <Facebook size={30} strokeWidth={1} />,
-    src: "#!",
-  },
-
-  {
-    id: 5,
-    logo: <Twitch size={30} strokeWidth={1} />,
-    src: "#!",
+    name: "LinkedIn",
+    logo: <Linkedin size={26} strokeWidth={1.5} />,
+    src: "https://www.linkedin.com/in/mirco-calle",
   },
 ];
 
@@ -42,25 +25,25 @@ export const itemsNavbar = [
   {
     id: 1,
     title: "Inicio",
-    icon: <HomeIcon size={25} color="#fff" strokeWidth={1} />,
+    icon: <HomeIcon size={24} color="#fff" strokeWidth={1.5} />,
     link: "/",
   },
   {
     id: 2,
-    title: "Servicios",
-    icon: <Rocket size={25} color="#fff" strokeWidth={1} />,
-    link: "/services",
+    title: "Proyectos",
+    icon: <BookText size={24} color="#fff" strokeWidth={1.5} />,
+    link: "/portfolio",
   },
   {
     id: 3,
-    title: "Proyectos",
-    icon: <BookText size={25} color="#fff" strokeWidth={1} />,
-    link: "/portfolio",
+    title: "Servicios",
+    icon: <Rocket size={24} color="#fff" strokeWidth={1.5} />,
+    link: "/services",
   },
   {
     id: 4,
     title: "Contacto",
-    icon: <ContactRound size={25} color="#fff" strokeWidth={1} />,
+    icon: <ContactRound size={24} color="#fff" strokeWidth={1.5} />,
     link: "/contact",
   },
 ];
@@ -68,48 +51,60 @@ export const itemsNavbar = [
 export const dataAboutPage = [
   {
     id: 1,
-    title: "Arquitecto de Soluciones Inteligentes",
-    subtitle: "Automatización & IA para Negocios",
+    title: "Ingeniería Civil & Fundamentos Técnicos",
+    subtitle: "Diseño, Estructuras y Construcción",
     description:
-      "Especializado en diseñar e implementar sistemas inteligentes que automatizan decisiones de negocio, optimizan procesos y generan resultados medibles. +80 negocios transformados con IA.",
-    date: "2020 - Presente",
+      "Formación en ingeniería civil con base en comportamiento estructural, normativas técnicas, análisis de cargas y procesos constructivos en obra.",
+    date: "Base de Ingeniería",
   },
   {
     id: 2,
-    title: "Consultor en Transformación Digital",
-    subtitle: "Estrategia & Implementación",
+    title: "Desarrollo de Software & Creación de SaaS",
+    subtitle: "Arquitectura Full Stack & Sistemas Multi-Tenant",
     description:
-      "Ayudo a empresas a identificar oportunidades de automatización y a implementar soluciones de IA que reducen costos operativos hasta 60% y aumentan ventas significativamente.",
-    date: "2019 - Presente",
+      "Desarrollo de aplicaciones web y de escritorio escalables con React, Django, PostgreSQL y arquitecturas multi-tenant, creando soluciones funcionales en producción.",
+    date: "Desarrollo de Software",
+  },
+  {
+    id: 3,
+    title: "Construction Technology, BIM & Automatización",
+    subtitle: "Revit, Robot Structural Analysis, Software & IA",
+    description:
+      "Especialización en la convergencia: aplicación de software a medida, metodología BIM (Revit), análisis estructural (Robot) y herramientas de IA para transformar los procesos de la construcción.",
+    date: "Presente & Enfoque Actual",
   },
 ];
 
 export const dataCounter = [
   {
     id: 0,
-    endCounter: 5,
-    text: "Años automatizando negocios",
+    endCounter: 1,
+    suffix: "º",
+    text: "Ingeniería Civil & Software",
     lineRight: true,
     lineRightMobile: true,
   },
   {
     id: 1,
-    endCounter: 80,
-    text: "Negocios transformados",
+    endCounter: 3,
+    suffix: "+",
+    text: "SaaS Desarrollados",
     lineRight: true,
     lineRightMobile: false,
   },
   {
     id: 2,
-    endCounter: 200,
-    text: "Procesos automatizados",
+    endCounter: 100,
+    suffix: "%",
+    text: "Enfoque en Construcción",
     lineRight: true,
     lineRightMobile: true,
   },
   {
     id: 3,
-    endCounter: 10,
-    text: "Industrias impactadas",
+    endCounter: 2,
+    suffix: "",
+    text: "Disciplinas: Revit & Robot",
     lineRight: false,
     lineRightMobile: false,
   },
@@ -117,68 +112,162 @@ export const dataCounter = [
 
 export const serviceData = [
   {
-    icon: <Computer />,
-    title: "Automatización de Procesos",
+    icon: <Layers size={36} />,
+    title: "Modelado BIM & Revit",
     description:
-      "Transformo procesos manuales en sistemas inteligentes que funcionan 24/7, reduciendo costos operativos hasta 60% y eliminando errores humanos.",
+      "Modelado tridimensional arquitectónico y estructural en Autodesk Revit, generación de documentación técnica coordinada, familias paramétricas y extracción organizada de vistas para proyectos.",
+    category: "BIM",
   },
   {
-    icon: <Rocket />,
-    title: "Sistemas de IA para Ventas",
+    icon: <Building2 size={36} />,
+    title: "Soporte en Cálculo Estructural",
     description:
-      "Implemento inteligencia artificial que ayuda a tu negocio a vender más: chatbots, recomendaciones personalizadas y análisis predictivo de clientes.",
+      "Modelado analítico preliminar, predimensionamiento de elementos estructurales y asistencia en comprobaciones analíticas mediante Autodesk Robot Structural Analysis bajo normativas técnicas.",
+    category: "Estructuras",
   },
   {
-    icon: <Crop />,
-    title: "Optimización de Operaciones",
+    icon: <Calculator size={36} />,
+    title: "Presupuestos y Cómputos Métricos",
     description:
-      "Diseño soluciones que optimizan inventarios, gestionan recursos y automatizan decisiones operativas con IA, liberando tiempo para lo estratégico.",
+      "Extracción sistemática de cantidades (Quantity Takeoff), estructuración de análisis de precios unitarios (APUs) y presupuestos de obra precisos potenciados con la plataforma HPress.",
+    category: "Estimating",
   },
-
   {
-    icon: <Pencil />,
-    title: "Chatbots & Asistentes IA",
+    icon: <Code2 size={36} />,
+    title: "Software a Medida para Construcción",
     description:
-      "Atención al cliente automatizada que nunca duerme. Respuestas instantáneas, calificación de leads y soporte 24/7 que convierte más.",
+      "Desarrollo de aplicaciones web y plataformas SaaS especializadas para empresas constructoras, consultoras y profesionales del sector AEC que necesitan digitalizar sus operaciones.",
+    category: "Software",
+  },
+  {
+    icon: <Bot size={36} />,
+    title: "IA & Automatización para AEC",
+    description:
+      "Automatización de flujos de trabajo repetitivos entre herramientas técnicas, procesamiento inteligente de datos de obra y asistentes para optimizar la toma de decisiones.",
+    category: "Automatización",
   },
 ];
 
-export const dataPortfolio = [
+export interface PortfolioProject {
+  id: number;
+  title: string;
+  subtitle?: string;
+  category: "saas" | "bim" | "web";
+  categoryLabel: string;
+  image: string;
+  urlGithub: string;
+  urlDemo: string;
+  description: string;
+  tags: string[];
+  featured?: boolean;
+  inProgress?: boolean;
+  highlights?: string[];
+}
+
+export const dataPortfolio: PortfolioProject[] = [
   {
     id: 1,
-    title: "Landing Page para restaurantes",
-    image: "/image-1.jpg",
-    urlGithub: "https://github.com/mirco-calle/RestaurantPageByMirco.git",
-    urlDemo: "https://pizza-page-by-mircodev.netlify.app/",
-    description:
-      "Una landing page moderna y atractiva diseñada específicamente para restaurantes, con menú digital y diseño responsivo.",
-  },
-  {
-    id: 2,
-    title: "DigiCard - Sistema de Gestión Multi-Tenant para Restaurantes",
-    image: "/image-2.png",
-    urlGithub: "https://github.com/mirco-calle/digital_menu_for_restaurants",
-    urlDemo: "https://digicardbo.netlify.app/",
-    description:
-      "Plataforma SaaS multi-tenant que permite a los restaurantes gestionar sus menús digitales y recibir pedidos fácilmente.",
-  },
-  {
-    id: 3,
-    title: "LoveArt Desktop - AR Studio & Management",
-    image: "/image-3.png",
-    urlGithub: "https://github.com/mirco-calle/loveARt-web",
-    urlDemo: "https://loveartweb.netlify.app/",
-    description:
-      "Aplicación de escritorio para gestión de contenido de Realidad Aumentada, enfoca tu fotografia con esta app y tu foto cobra vida",
-  },
-  {
-    id: 4,
-    title: "HPress-Calculo de presupuestos de obra",
+    title: "HPress — SaaS de Presupuestos y Gestión de Obra",
+    subtitle: "Construction Estimating & Project Management Platform",
+    category: "saas",
+    categoryLabel: "Construction Tech SaaS",
     image: "/image-4.png",
     urlGithub: "https://github.com/mirco-calle",
     urlDemo: "https://hpress.netlify.app/",
     description:
-      "Plataforma SaaS multi-tenant que permite el Calculo de presupuestos de obra para ingenieros civiles, rapido con catalogo de referencia ",
+      "Plataforma SaaS multi-tenant diseñada para ingenieros civiles y empresas constructoras. Permite el cálculo ágil y riguroso de presupuestos de obra, gestión de análisis de precios unitarios (APUs) y catálogo centralizado de insumos y recursos.",
+    tags: [
+      "Construcción",
+      "Presupuestos de Obra",
+      "SaaS Multi-Tenant",
+      "React",
+      "Django",
+      "PostgreSQL",
+    ],
+    featured: true,
+    highlights: [
+      "Diseñado por y para ingenieros civiles",
+      "Cálculo automatizado de costos directos e indirectos",
+      "Catálogo maestro de insumos y rendimientos",
+    ],
+  },
+  {
+    id: 2,
+    title: "Modelado Estructural & Documentación BIM",
+    subtitle: "Caso de Estudio Práctico (Revit + Robot Structural Analysis)",
+    category: "bim",
+    categoryLabel: "Ingeniería & BIM",
+    image: "/work-1.jpeg",
+    urlGithub: "#!",
+    urlDemo: "#!",
+    description:
+      "Proyecto en fase de documentación técnica integral: modelado geométrico en Autodesk Revit, vinculación con Autodesk Robot Structural Analysis para análisis de esfuerzos y generación de planos de armado y cómputos métricos.",
+    tags: [
+      "Autodesk Revit",
+      "Robot Structural Analysis",
+      "Modelado BIM",
+      "Cálculo Estructural",
+      "Cómputos Métricos",
+    ],
+    featured: true,
+    inProgress: true,
+    highlights: [
+      "Modelado analítico y estructural coordinado",
+      "Extracción paramétrica de tablas de cuantías de materiales",
+      "Documentación y planos de despiece constructivo",
+    ],
+  },
+  {
+    id: 3,
+    title: "LoveArt Desktop — AR Studio & Management",
+    subtitle: "Software de Escritorio para Realidad Aumentada & 3D",
+    category: "saas",
+    categoryLabel: "Software & 3D",
+    image: "/image-3.png",
+    urlGithub: "https://github.com/mirco-calle/loveARt-web",
+    urlDemo: "https://loveartweb.netlify.app/",
+    description:
+      "Aplicación de escritorio avanzada para la gestión y despliegue de experiencias interactivas con Realidad Aumentada. Permite enlazar fotografías físicas con animaciones audiovisuales y modelos 3D en tiempo real.",
+    tags: [
+      "Realidad Aumentada",
+      "Desktop Software",
+      "Gestión de Assets 3D",
+      "Interactividad",
+    ],
+    highlights: [
+      "Gestión de activos tridimensionales",
+      "Integración de visores interactivos",
+    ],
+  },
+  {
+    id: 4,
+    title: "DigiCard — Plataforma SaaS Multi-Tenant",
+    subtitle: "Arquitectura Multi-Inquilino & Gestión Digital",
+    category: "saas",
+    categoryLabel: "SaaS Platform",
+    image: "/image-2.png",
+    urlGithub: "https://github.com/mirco-calle/digital_menu_for_restaurants",
+    urlDemo: "https://digicardbo.netlify.app/",
+    description:
+      "Plataforma SaaS multi-tenant que demuestra solvencia en arquitectura de software: aislamiento seguro de bases de datos por cliente, paneles administrativos independientes y alta disponibilidad.",
+    tags: ["SaaS Multi-Tenant", "Full Stack", "APIs REST", "Bases de Datos"],
+    highlights: [
+      "Aislamiento de inquilinos (Multi-tenancy)",
+      "Panel de control y reportería en tiempo real",
+    ],
+  },
+  {
+    id: 5,
+    title: "Plataforma Web Digital & UI Moderna",
+    subtitle: "Desarrollo Web Frontend Responsivo",
+    category: "web",
+    categoryLabel: "Web Development",
+    image: "/image-1.jpg",
+    urlGithub: "https://github.com/mirco-calle/RestaurantPageByMirco.git",
+    urlDemo: "https://pizza-page-by-mircodev.netlify.app/",
+    description:
+      "Desarrollo web enfocado en alto rendimiento, interfaz fluida y experiencia de usuario optimizada para dispositivos móviles y escritorio.",
+    tags: ["Next.js / React", "Tailwind CSS", "Diseño Responsivo"],
   },
 ];
 
@@ -542,54 +631,33 @@ export const dataContactSocial = [
 export const dataContactFAQ = [
   {
     id: 1,
-    question: "¿Cuál es el primer paso después de enviar el formulario?",
+    question: "¿En qué tipo de proyectos de ingeniería o BIM puedes colaborar?",
     answer:
-      "Revisaré tu solicitud en menos de 24 horas. Si me interesa el proyecto, te contactaré vía email o WhatsApp para agendar una llamada inicial de 15 minutos sin costo.",
+      "Puedo brindar soporte en modelado BIM y documentación técnica en Autodesk Revit, asistencia en modelado analítico con Autodesk Robot Structural Analysis, cómputos métricos (Quantity Takeoff) y estructuración de presupuestos de obra.",
   },
   {
     id: 2,
-    question: "¿Cuánto cuesta una consultoría?",
+    question: "¿Desarrollas software o plataformas personalizadas para el sector construcción?",
     answer:
-      "La consultoría inicial de 30 minutos es completamente GRATIS. Es una sesión donde analizamos tu negocio, identificamos oportunidades y discutimos posibles soluciones. Sin compromiso.",
+      "Sí. Diseño y desarrollo aplicaciones web, plataformas SaaS especializadas (como HPress), integraciones entre sistemas y herramientas a medida para contratistas, ingenieros y empresas del sector AEC.",
   },
   {
     id: 3,
-    question: "¿Qué información debo proporcionar en el formulario?",
+    question: "¿Cómo aplicas la IA y la automatización en la construcción?",
     answer:
-      "Procuro ser flexible. Cuéntame: tu nombre, email, qué necesitas automatizar y un poco sobre tu negocio. Cuanta más información, mejor podré ayudarte, pero lo mínimo es suficiente.",
+      "Me enfoco en automatizar tareas repetitivas de cálculo, procesamiento de datos de presupuesto, integración de catálogos y asistentes inteligentes para consulta rápida de especificaciones técnicas y documentación.",
   },
   {
     id: 4,
-    question:
-      "¿Trabajan con empresas pequeñas o solo con grandes corporativos?",
+    question: "¿Cuál es el proceso para iniciar una colaboración o proyecto?",
     answer:
-      "Trabajo con negocios de TODOS los tamaños. Mi especialidad es ayudar a pequeños y medianos empresarios a crecer automatizando sus procesos. Las startups y emprendedores son mi pasión.",
+      "Tras recibir tu mensaje por formulario, LinkedIn o WhatsApp, coordinamos una llamada técnica inicial para revisar el alcance, requerimientos, tiempos de entrega y metodología de trabajo más adecuada.",
   },
   {
     id: 5,
-    question:
-      "¿Ofrecen servicios de mantenimiento después de la automatización?",
+    question: "¿Cuál es el tiempo promedio de respuesta?",
     answer:
-      "Sí. Ofrezco diferentes planes de soporte y mantenimiento según tus necesidades. Discutimos esto en detalle después de que te presente la solución.",
-  },
-  {
-    id: 6,
-    question: "¿Cuál es el tiempo de respuesta típico?",
-    answer:
-      "Respondo a emails y mensajes en menos de 24 horas laborales. Para asuntos urgentes, puedes escribirme por WhatsApp y tendré prioridad.",
-  },
-  {
-    id: 7,
-    question:
-      "¿Puedo agendar directamente una consultoría sin llenar el formulario?",
-    answer:
-      "Claro. Puedes escribirme por WhatsApp o enviarme un email diciendo que quieres agendar una consultoría. Prefiero que conozcamos un poco tu caso primero.",
-  },
-  {
-    id: 8,
-    question: "¿Cómo es el proceso de trabajo después de la consultoría?",
-    answer:
-      "Tras la consultoría inicial, te presento una propuesta personalizada con: soluciones recomendadas, timeline, inversión y ROI estimado. Decide si continúas. No hay presión.",
+      "Respondo normalmente en menos de 24 horas laborales. Para consultas inmediatas o de coordinación ágil, puedes contactarme directamente vía WhatsApp o LinkedIn.",
   },
 ];
 

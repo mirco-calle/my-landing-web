@@ -14,8 +14,9 @@ import CoverParticles from "@/components/cover-particles";
 const urbanist = Urbanist({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "MircoDev",
-  description: "Innovación en desarrollo web y soluciones tecnológicas.",
+  title: "Mirco Calle | Ingeniero Civil · Software & BIM",
+  description:
+    "Mirco Calle — Ingeniero Civil | Desarrollo de Software | IA y Automatización para la Construcción | BIM y Cálculo Estructural.",
 };
 
 export default function RootLayout({

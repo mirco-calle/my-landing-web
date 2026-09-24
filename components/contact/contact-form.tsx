@@ -179,7 +179,7 @@ export const ContactForm = () => {
           name="phone"
           value={formData.phone}
           onChange={handleChange}
-          placeholder="+34 123 456 789"
+          placeholder="+591 63136673"
           className={`w-full px-4 py-3 bg-slate-700/50 border rounded-lg focus:outline-none transition-colors
             ${
               errors.phone
@@ -206,7 +206,7 @@ export const ContactForm = () => {
           name="subject"
           value={formData.subject}
           onChange={handleChange}
-          placeholder="¿Sobre qué es tu consulta?"
+          placeholder="Ej: Modelado BIM / Soporte Estructural / Software de Construcción"
           className={`w-full px-4 py-3 bg-slate-700/50 border rounded-lg focus:outline-none transition-colors
             ${
               errors.subject
